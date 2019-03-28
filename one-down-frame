@@ -1,0 +1,39 @@
+//单选框
+<!--是否有车单选框-->
+						<div class="mui-input-row-all " style="display: flex;line-height: auto;border-bottom:1px solid #DFDFDF;padding:0.4rem 0">
+							<div class="publish_gather_time_title" style="margin-right: 2rem;padding:0.4rem 0.6rem">是否有车:</div>
+							<div class="mui-input-row mui-radio mui-left">
+								<label class="publish_gather_time_title">有车</label>
+								<input name="radio1" type="radio" class="changeInput">
+							</div>
+							<div class="mui-input-row mui-radio mui-left">
+								<label class="publish_gather_time_title">步行</label>
+								<input name="radio1" type="radio" class="changeInput">
+							</div>
+						</div>
+  //获取单选框内的值
+			var ele = document.getElementsByName("radio1");
+			for(var i = 0; i < ele.length; i++) {
+				mui.alert(ele[i].value + ": " + ele[i].checked)
+			}
+//下拉框-------------------------
+						<!--下拉框区域-->
+						<div class="mui-input-row" style="border:1px solid blue;padding-left:0rem;">
+							<label class="mui-navigate-right publish_gather_time_title" href="#" style="border:1px solid red;">集合人数:</label>
+							<select name="select" id="select_k1" style="color: red;">
+								<option value="1" selected="true" style="border:1px solid blue;">1人</option>
+								<option value="2">2人</option>
+								<option value="3">3人</option>
+								<option value="4">4人</option>
+								<option value="5">5人</option>
+								<option value="6">6人</option>
+								<option value="7">7人</option>
+								<option value="8">8人</option>
+								<option value="9">9人</option>
+								<option value="10">10人</option>							
+							</select>
+						</div>
+            
+			//获取select的所选中的val值：
+		var valkk=$("#select_k1").val()
+		console.log(valkk)
